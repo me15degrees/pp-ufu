@@ -26,7 +26,8 @@ int main(){
 		double raiz2 = (-b - pow(delta,0.5)) / (2*a);
 		printf("A equação possui duas raizes reais: %2lf e %2lf\n", raiz1, raiz2);
 	}
-		
+
+
 	return 0;
 
 }
