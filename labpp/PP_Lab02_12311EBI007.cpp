@@ -46,20 +46,21 @@ float imposto(int estado, float valor_total) {
 }
 
 float total_valor(int codigo, float peso) {
-    int preco;
+    int preco = 0;
 
     while (codigo < 10 || codigo > 40) {
         printf("Digite o código de carga (10 a 40): ");
         scanf("%d", &codigo);
     }
 
-    if (codigo > 10 && codigo <= 20) {
+    if (codigo >= 10 && codigo <= 20) {
         preco = 100;
     } else if (codigo > 20 && codigo <= 30) {
         preco = 250;
     } else if (codigo > 30 && codigo <= 40) {
         preco = 340;
     }
+    printf("dasdasdsa é: R$%d\n", preco);
 
     printf("Preço da carga: R$%d\n", preco);
     float valor_total = preco * peso;
